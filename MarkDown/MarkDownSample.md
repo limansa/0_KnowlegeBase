@@ -11,6 +11,21 @@
 - Markdown 透過簡單的排版做出文件 沒有顏色
 - Markdown允許你用html tag
 
+## 程式碼區塊
+- 注意結尾要空白 內嵌define前的#要有空白
+```c++{.line-numbers}
+  #define BOARD_ADC0_NCHANNELS 4
+  #define GPIO_ADC0_CH4OUT    PIN_ADC0_SE4B  // PTC2  ALT0
+  #define GPIO_ADC0_CH8OUT    PIN_ADC0_SE8   // PTB0  ALT0
+  #define GPIO_ADC0_CH9OUT    PIN_ADC0_SE9   // PTB1  ALT0
+  #define GPIO_ADC0_CH14OUT   PIN_ADC0_SE14  // PTC0  ALT0
+
+  #define ADC_ID_HW_ID        0              // PIN_ADC0_SE4B
+  #define ADC_ID_USB_C_CC1    1              // PIN_ADC0_SE8
+  #define ADC_ID_USB_C_CC2    2              // PIN_ADC0_SE9
+  #define ADC_ID_BATT_TEMP    3              // PIN_ADC0_SE14
+ ```
+
 ## 清單
 - 階層一
   - 階層二
@@ -21,6 +36,11 @@
 - [ ] checklist 1
 - [ ] Checklist 2
 - [x] Alt+C auto V
+
+## 表格
+| Column 1 | Column 2 | Column 3 |
+| -------- | -------- | -------- |
+| Text     | Text     | Text     |
 
 ## 字型
 **粗體**

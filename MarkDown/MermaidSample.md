@@ -68,3 +68,64 @@ gantt
     为rendere编写test: 2d
     将功能加入到mermaid: 1d
 ```
+
+## 圓餅圖
+```mermaid
+pie
+
+  title Key elements in Product X
+  "Calcium" : 42.96
+  "Potassium" : 50.05
+  "Magnesium" : 10.01
+  "Iron" :  5
+```
+
+## 類型圖
+```mermaid
+classDiagram
+
+  Class01 <|-- AveryLongClass: Cool
+  <<interface>> Class01
+  Class09-->C2: Where am i?
+  Class09 --* C3
+  Class09 --|> Class07
+  Class07: equals()
+  Class07: Object[] elementData
+  Class01: size()
+  Class01: int chimp
+  Class01: int gorilla
+  class Class10 {
+    <<service>>
+    int id
+    size()
+  }
+```
+
+## 狀態圖
+```mermaid
+stateDiagram
+
+    [*]-->Active
+    state Active {
+        [*]-->NumLockOff
+        NumLockOff-->NumLockOn : EvNumLockPressed
+        NumLockOn-->NumLockOff : EvNumLockPressed
+        --
+        [*]-->CapsLockOff
+        CapsLockOff-->CapsLockOn : EvCapsLockPressed
+        CapsLockOn-->CapsLockOff : EvCapsLockPressed
+        --
+        [*]-->ScrollLockOff
+        ScrollLockOff-->ScrollLockOn : EvCapsLockPressed
+        ScrollLockOn-->ScrollLockOff : EvCapsLockPressed
+            }
+```
+
+## 實體關係圖
+```mermaid
+erDiagram
+    CUSTOMER ||--o{ ORDER : places
+    ORDER ||--|{ LINE-ITEM : contains
+    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+```
+
